@@ -23,10 +23,7 @@ Please do not hesitate to get in touch with any questions you have during the pr
 
 ## README Begins Here 
 
-### 1. Create branches using a git flow branching strategy, master -> dev -> feature -> dev -> master 
-
-### 2. Create infrastructure on AWS with infastructure orchestration tool terraform
-
+see wiki [wiki page](https://github.com/Kaneofthrones/devops-technical-test/wiki)
 Requirements / Tools Used:
 
 * awscli
@@ -34,6 +31,10 @@ Requirements / Tools Used:
 * docker
 * terraform
 * kubectl 
+
+### 1. Create branches using a git flow branching strategy, master -> dev -> feature -> dev -> master 
+
+### 2. Create infrastructure on AWS with infastructure orchestration tool terraform
 
 ### 3. Package app into docker
 
