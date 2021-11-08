@@ -27,6 +27,14 @@ Please do not hesitate to get in touch with any questions you have during the pr
 
 ### 2. Create infrastructure on AWS with infastructure orchestration tool terraform
 
+Requirements / Tools Used:
+
+* awscli
+* aws credentials saved in ~/.aws/credentials | configured
+* docker
+* terraform
+* kubectl 
+
 ### 3. Package app into docker
 
 ### 4. Deploy app on EKS 
