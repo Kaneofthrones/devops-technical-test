@@ -23,14 +23,14 @@ Please do not hesitate to get in touch with any questions you have during the pr
 
 ## README Begins Here 
 
-### 1. create a git flow branching strategy, master -> dev -> feature -> dev -> master 
+### 1. Create branches using a git flow branching strategy, master -> dev -> feature -> dev -> master 
 
-### 2. create infrastructure on AWS with infastructure orchestration tool terraform
+### 2. Create infrastructure on AWS with infastructure orchestration tool terraform
 
 ### 3. Package app into docker
 
-### 4. deploy app on EKS 
+### 4. Deploy app on EKS 
 
-### 5. setup jenkins pipelines for deploying docker app onto eks
+### 5. Setup jenkins pipelines for deploying docker app onto eks
 
 ### 6. Have fun ;)
