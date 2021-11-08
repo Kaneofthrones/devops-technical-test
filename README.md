@@ -37,6 +37,8 @@ Requirements / Tools Used:
 
 ### 2. Create infrastructure on AWS with infastructure orchestration tool terraform
 
+eks-cluster.tf will clone another git repo that has the source code for eks
+
 ### 3. Package app into docker
 
 ### 4. Deploy app on EKS 
