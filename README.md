@@ -31,7 +31,9 @@ Requirements / Tools Used:
 * aws credentials saved in ~/.aws/credentials | configured
 * docker
 * terraform
-* kubectl 
+* kubectl
+* nodejs
+* npm 
 
 ### 1. Create branches using a git flow branching strategy, master -> dev -> feature -> dev -> master 
 
