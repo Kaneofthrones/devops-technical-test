@@ -31,6 +31,6 @@ Please do not hesitate to get in touch with any questions you have during the pr
 
 ### 4. Deploy app on EKS 
 
-### 5. Setup jenkins pipelines for deploying docker app onto eks
+### 5. Setup jenkins pipeline for deploying docker app onto eks
 
 ### 6. Have fun ;)
