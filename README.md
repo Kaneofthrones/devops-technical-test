@@ -23,7 +23,8 @@ Please do not hesitate to get in touch with any questions you have during the pr
 
 ## README Begins Here 
 
-see wiki [wiki page](https://github.com/Kaneofthrones/devops-technical-test/wiki)
+For additional info see [wiki page](https://github.com/Kaneofthrones/devops-technical-test/wiki)
+
 Requirements / Tools Used:
 
 * awscli
