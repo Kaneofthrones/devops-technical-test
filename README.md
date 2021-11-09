@@ -43,7 +43,38 @@ eks-cluster.tf will clone another git repo that has the source code for eks
 
 ### 3. Package app into docker
 
-### 4. Deploy app on EKS 
+make dockerfile for app.js
+
+run app to check docker image works
+    docker run -p 49160:3000 -d km-node-app
+
+Curl to verify app is behaving, you should see "hello world"
+    curl -i localhost:49160 
+
+### 4. Deploy app on EKS & static host the html file
+
+To deploy on EKS:
+
+    kubectl apply -f kubed-app
+
+the container is on my dockerhub account (kaneofthrones) if it cant be found locally
+
+Then to check the app is running:
+
+    kubectl get pods --watch
+
+Once its running run the following to get the loadbalancer address
+
+    kubectl get svc
+
+copy the external ip of the load balancer into your web browser to be greated with "hello world"
+
+
+
+Static host html file:
+
+ 
+
 
 ### 5. Setup jenkins pipeline for deploying docker app onto eks
 
