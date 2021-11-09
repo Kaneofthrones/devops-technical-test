@@ -33,7 +33,13 @@ Requirements / Tools Used:
 * terraform
 * kubectl
 * nodejs
-* npm 
+* npm
+
+keep in mind certain files have been excluded as standard code practise these are:
+
+     node_modules/*
+     terraform/.terraform/*
+     terraform/kubeconfig*
 
 ### 1. Create branches using a git flow branching strategy, master -> dev -> feature -> dev -> master 
 
@@ -46,9 +52,11 @@ eks-cluster.tf will clone another git repo that has the source code for eks
 make dockerfile for app.js
 
 run app to check docker image works
+
     docker run -p 49160:3000 -d km-node-app
 
 Curl to verify app is behaving, you should see "hello world"
+
     curl -i localhost:49160 
 
 ### 4. Deploy app on EKS & static host the html file
@@ -73,7 +81,9 @@ copy the external ip of the load balancer into your web browser to be greated wi
 
 Static host html file:
 
- 
+ static hosting on eks
+
+![delio_1](https://user-images.githubusercontent.com/30622959/140850493-c70b6428-ef48-40d8-b6f6-353e12becb02.png)
 
 
 ### 5. Setup jenkins pipeline for deploying docker app onto eks
