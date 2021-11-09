@@ -79,7 +79,8 @@ copy the external ip of the load balancer into your web browser to be greated wi
 
 Static host html file:
 
- 
+ static hosting on eks
+![image](https://user-images.githubusercontent.com/30622959/140849850-2981cfdb-d580-4ba2-a2db-9790232caa78.png)
 
 
 ### 5. Setup jenkins pipeline for deploying docker app onto eks
