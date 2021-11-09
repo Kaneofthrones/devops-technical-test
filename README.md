@@ -33,7 +33,13 @@ Requirements / Tools Used:
 * terraform
 * kubectl
 * nodejs
-* npm 
+* npm
+
+keep in mind certain files have been excluded as standard code practise these are:
+
+     node_modules/*
+     terraform/.terraform/*
+     terraform/kubeconfig*
 
 ### 1. Create branches using a git flow branching strategy, master -> dev -> feature -> dev -> master 
 
