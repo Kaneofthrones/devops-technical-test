@@ -52,9 +52,11 @@ eks-cluster.tf will clone another git repo that has the source code for eks
 make dockerfile for app.js
 
 run app to check docker image works
+
     docker run -p 49160:3000 -d km-node-app
 
 Curl to verify app is behaving, you should see "hello world"
+
     curl -i localhost:49160 
 
 ### 4. Deploy app on EKS & static host the html file
