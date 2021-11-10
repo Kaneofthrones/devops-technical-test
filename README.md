@@ -103,5 +103,7 @@ Then go the to url at port 8080 displayed from:
 
 Then there is jenkins for future pipeline use
 
+![image](https://user-images.githubusercontent.com/30622959/141039450-0c9dc721-bccf-4f2d-a872-d303d8c6c094.png)
+
 
 ### 6. Have fun ;)
