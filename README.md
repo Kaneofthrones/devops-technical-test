@@ -34,6 +34,7 @@ Requirements / Tools Used:
 * kubectl
 * nodejs
 * npm
+* Helm
 
 keep in mind certain files have been excluded as standard code practise these are:
 
@@ -86,34 +87,21 @@ Static host html file:
 ![delio_1](https://user-images.githubusercontent.com/30622959/140850493-c70b6428-ef48-40d8-b6f6-353e12becb02.png)
 
 
-### 5. Setup jenkins pipeline for deploying docker app onto eks
+### 5. Setup jenkins server 
 
-Run the following to install an efs file system
+run the following to setup a jenkins server on EKS
 
-    aws efs create-file-system \
-    --creation-token creation-token \
-    --performance-mode generalPurpose \
-    --throughput-mode bursting \
-    --region eu-west-2 \
-    --tags Key=Name,Value=KMEFSFileSystem \
-    --encrypted
+    kubectl apply -f jenkins.yaml
 
-run following to create mount targets in the AZ's:
+Then exec onto the pod to retrieve the admin passwd
 
-    aws efs create-mount-target \
-    --file-system-id <id> \
-    --subnet-id <id> \
-    --security-group <id> \
-    --region eu-west-2
+    kubectl exec --stdin --tty jenkins-pod -- /bin/bash
 
-create access point:
+Then go the to url at port 8080 displayed from:
 
-    aws efs create-access-point --file-system-id <id> \
-    --posix-user Uid=1000,Gid=1000 \
-    --root-directory "Path=/jenkins,CreationInfo={OwnerUid=1000,OwnerGid=1000,Permissions=777}"
+    kubectl get svc
 
-Deploy CSI driver for eks cluster 
+Then there is jenkins for future pipeline use
 
-    kubectl apply -k "github.com/kubernetes-sigs/aws-efs-csi-driver/deploy/kubernetes/overlays/stable/?ref=master"
 
 ### 6. Have fun ;)
