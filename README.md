@@ -46,6 +46,9 @@ keep in mind certain files have been excluded as standard code practise these ar
 
 Master Branch -> Dev branch -> feature/iac -> Dev Branch -> feature/frontend -> Dev Branch -> feature/jenkins -> Dev Branch -> Master Branch
 
+![image](https://user-images.githubusercontent.com/30622959/141043288-7785614f-9d44-43b1-a47f-ffb835756e71.png)
+
+
 ### 2. Create infrastructure on AWS with infastructure orchestration tool terraform
 
 I decided on Terraform as its my preferred tool for IAC and Terraform > Ansible for this use case
