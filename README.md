@@ -44,7 +44,7 @@ keep in mind certain files have been excluded as standard code practise these ar
 
 ### 1. Create branches using a git flow branching strategy 
 
-master branch -> Dev branch -> feature/iac -> Dev Branch -> feature/jenkins -> Dev Branch -> Master Branch
+Master Branch -> Dev branch -> feature/iac -> Dev Branch -> feature/frontend -> Dev Branch -> feature/jenkins -> Dev Branch -> Master Branch
 
 ### 2. Create infrastructure on AWS with infastructure orchestration tool terraform
 
