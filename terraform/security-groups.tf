@@ -45,3 +45,18 @@ resource "aws_security_group" "all_worker_mgmt" {
     ]
   }
 }
+
+resource "aws_security_group" "efs-mount-sg" {
+  name_prefix = "efs-mount-sg"
+  vpc_id      = module.vpc.vpc_id
+
+  ingress {
+    from_port = 2049
+    to_port   = 2049
+    protocol  = "tcp"
+
+    cidr_blocks = [
+      "192.168.0.0/16",
+    ]
+  }
+}
