@@ -88,4 +88,32 @@ Static host html file:
 
 ### 5. Setup jenkins pipeline for deploying docker app onto eks
 
+Run the following to install an efs file system
+
+    aws efs create-file-system \
+    --creation-token creation-token \
+    --performance-mode generalPurpose \
+    --throughput-mode bursting \
+    --region eu-west-2 \
+    --tags Key=Name,Value=KMEFSFileSystem \
+    --encrypted
+
+run following to create mount targets in the AZ's:
+
+    aws efs create-mount-target \
+    --file-system-id <id> \
+    --subnet-id <id> \
+    --security-group <id> \
+    --region eu-west-2
+
+create access point:
+
+    aws efs create-access-point --file-system-id <id> \
+    --posix-user Uid=1000,Gid=1000 \
+    --root-directory "Path=/jenkins,CreationInfo={OwnerUid=1000,OwnerGid=1000,Permissions=777}"
+
+Deploy CSI driver for eks cluster 
+
+    kubectl apply -k "github.com/kubernetes-sigs/aws-efs-csi-driver/deploy/kubernetes/overlays/stable/?ref=master"
+
 ### 6. Have fun ;)
