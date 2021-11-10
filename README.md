@@ -84,11 +84,11 @@ Curl to verify app is behaving, you should see "hello world"
 
 URLs:
 
-  frontend: ad5b019e148e5415d8734efe53fba4ed-2045226712.eu-west-2.elb.amazonaws.com:80
+  [frontend](ad5b019e148e5415d8734efe53fba4ed-2045226712.eu-west-2.elb.amazonaws.com:80)
 
-  API: a4ee6e07bae4c4a5b83ed3ddb9c897ec-97789143.eu-west-2.elb.amazonaws.com:80
+  [API](a4ee6e07bae4c4a5b83ed3ddb9c897ec-97789143.eu-west-2.elb.amazonaws.com:80)
 
-  Demo-App: a64b4eb06b6f3469fb0a9465bb6ed0ae-326720983.eu-west-2.elb.amazonaws.com:80
+  [Demo-App](a64b4eb06b6f3469fb0a9465bb6ed0ae-326720983.eu-west-2.elb.amazonaws.com:80)
 
 To get the containers onto EKS I used a deployment to create a pod for the container and a service to expose the container 
 
@@ -119,7 +119,7 @@ Static host html file:
 
 ### 5. Setup jenkins server 
 
-URL: ae561c1398e3d481db642f6653c8617b-1234937774.eu-west-2.elb.amazonaws.com:8080
+[Jenkins](ae561c1398e3d481db642f6653c8617b-1234937774.eu-west-2.elb.amazonaws.com:8080)
 
 run the following to setup a jenkins server on EKS
 
