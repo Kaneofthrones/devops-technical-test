@@ -137,5 +137,7 @@ Then there is jenkins for future pipeline use
 
 ![image](https://user-images.githubusercontent.com/30622959/141039725-51fa77cc-f516-490a-a9ab-84c26f0dd147.png)
 
+username: user
+password: user
 
 ### 6. Have fun ;)
